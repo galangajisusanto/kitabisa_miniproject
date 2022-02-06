@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="kitabisa_miniproject" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryButton" destination="mu2-tg-FmU" id="D1F-jU-AWz"/>
+                <outlet property="movieTable" destination="isn-67-OL8" id="nyQ-hc-cQ2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu2-tg-FmU">
+                    <rect key="frame" x="0.0" y="816" width="414" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="KQm-cK-1Bx"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Category" cornerStyle="small"/>
+                    <connections>
+                        <action selector="categoryButtonTapped:" destination="-1" eventType="touchUpInside" id="Pgj-ve-hZn"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="isn-67-OL8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="756"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mu2-tg-FmU" firstAttribute="top" secondItem="isn-67-OL8" secondAttribute="bottom" constant="16" id="AUu-9w-aL6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mu2-tg-FmU" secondAttribute="trailing" id="LNy-7S-auW"/>
+                <constraint firstItem="mu2-tg-FmU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W5J-Il-0rD"/>
+                <constraint firstItem="isn-67-OL8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZVc-09-h19"/>
+                <constraint firstItem="isn-67-OL8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aJW-ha-WKx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="isn-67-OL8" secondAttribute="trailing" id="xIg-Dv-hcZ"/>
+                <constraint firstItem="mu2-tg-FmU" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ygx-wi-LqF"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
